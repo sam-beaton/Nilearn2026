@@ -1,0 +1,13 @@
+# Core packages needed to run the Nilearn2026 course notebooks.
+# Versions below are pinned to what has been tested against these notebooks.
+# Install with:  pip install -r requirements.txt
+
+nilearn==0.14.1
+nibabel==5.4.2
+numpy==2.5.3
+pandas==3.0.6
+matplotlib==3.11.2
+
+# Needed to run the notebooks themselves
+jupyter
+ipykernel
