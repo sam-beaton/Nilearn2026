@@ -4,8 +4,8 @@ Welcome! This guide will get the course notebooks running on your own computer, 
 
 This guide has two parts:
 
-- **Part 1: Pre-session setup** — do this on your own, before the session. It takes around 20–30 minutes.
-- **Part 2: On the day** — a much shorter set of steps to reopen everything when the session begins.
+- **Part 1: Pre-session setup** - do this on your own, before the session. It takes around 20–30 minutes.
+- **Part 2: On the day** - a much shorter set of steps to reopen everything when the session begins.
 
 If you get stuck at any point, email `samuel.beaton@psych.ox.ac.uk` with a screenshot of what you're seeing.
 
@@ -15,32 +15,32 @@ Throughout this guide, "Terminal" refers to: **Terminal** (Mac), **Command Promp
 
 ## Which instructions should I follow?
 
-The steps below are split into three self-contained sections, one per operating system. Find yours and follow it all the way through — you shouldn't need to look at the other sections at all.
+The steps below are split into three self-contained sections, one per operating system. Find yours and follow it all the way through, you shouldn't need to look at the other sections at all.
+
+**Before jumping to your section, complete the two steps just below first, they're the same for everyone.**
 
 - **Using a Mac?** → Go to Section A: Mac
 - **Using Windows?** → Go to Section B: Windows
 - **Using Linux?** → Go to Section C: Linux
 
-Before jumping to your section, complete the two steps just below first — they're the same for everyone.
-
 ---
 
 ## Step 1: Choose where the course materials will live (all systems)
 
-Pick or create a folder on your computer where you'll keep course materials — for example `Documents/CourseMaterials`. You don't need to create the specific project folder yet; that happens automatically in the next step.
+Pick or create a folder on your computer where you'll keep course materials - for example `Documents/CourseMaterials`. You don't need to create the specific project folder yet; that happens automatically in the next step.
 
 ## Step 2: Download the course repository (all systems)
 
 Choose **one** of the three methods below.
 
-### Option A — Download as a ZIP (simplest, no extra software needed)
+### Option A - Download as a ZIP (simplest, no extra software needed)
 
 1. Go to the repository page in your browser: `https://github.com/sam-beaton/Nilearn2026`
 2. Click the green **Code** button, then **Download ZIP**.
 3. Find the downloaded ZIP file (usually in your Downloads folder) and unzip it (double-click, or right-click → Extract, depending on your system).
 4. Move the unzipped folder into the location you chose in Step 1.
 
-### Option B — Clone with Git (if you're comfortable with the Terminal)
+### Option B - Clone with Git (if you're comfortable with the Terminal)
 
 1. Open a Terminal and navigate to the folder from Step 1, e.g.:
    ```
@@ -52,9 +52,9 @@ Choose **one** of the three methods below.
    ```
    This creates a new folder containing all the course files.
 
-   (If you get a "command not found" error for `git`, you don't have Git installed — use Option A or C instead, or install Git from [git-scm.com](https://git-scm.com/downloads).)
+   (If you get a "command not found" error for `git`, you don't have Git installed - use Option A or C instead, or install Git from [git-scm.com](https://git-scm.com/downloads).)
 
-### Option C — GitHub Desktop (a visual alternative to Git)
+### Option C - GitHub Desktop (a visual alternative to Git)
 
 1. Install [GitHub Desktop](https://desktop.github.com/) if you don't already have it.
 2. Open GitHub Desktop → **File → Clone Repository**.
@@ -69,7 +69,7 @@ Now go to the section for your operating system below.
 
 ## Section A: Mac
 
-### PART 1 — Pre-session setup
+### PART 1 - Pre-session setup
 
 **A1. Check you have Python installed**
 
@@ -94,7 +94,7 @@ python3 -m ensurepip --upgrade
 ```
 cd path/to/Nilearn2026
 ```
-(Replace with wherever you put it — e.g. `cd Documents/CourseMaterials/Nilearn2026`.)
+(Replace with wherever you put it - e.g. `cd Documents/CourseMaterials/Nilearn2026`.)
 
 **A4. Create a virtual environment**
 
@@ -116,7 +116,7 @@ Your Terminal prompt should now show `(venv)` at the start of the line.
 ./venv/bin/pip install -r requirements.txt
 ```
 
-> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed (like `pyenv` or `conda`) can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely — please use this exact form.
+> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed (like `pyenv` or `conda`) can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely - please use this exact form.
 
 This may take a minute or two.
 
@@ -129,11 +129,11 @@ deactivate
 ```
 This deactivates the virtual environment (your prompt will lose the `(venv)` prefix). You can then simply close the Terminal window.
 
-> **Everything from here onward (Part 2) is only needed once the session itself begins** — there's no need to do this in advance.
+> **Everything from here onward (Part 2) is only needed once the session itself begins** - there's no need to do this in advance.
 
 ---
 
-### PART 2 — On the day (during the session)
+### PART 2 - On the day (during the session)
 
 **A8. Reactivate the virtual environment**
 
@@ -168,7 +168,7 @@ to close the virtual environment, and close the Terminal window.
 
 ## Section B: Windows
 
-### PART 1 — Pre-session setup
+### PART 1 - Pre-session setup
 
 **B1. Check you have Python installed**
 
@@ -176,7 +176,7 @@ to close the virtual environment, and close the Terminal window.
 2. Type `python --version` and press Enter.
 3. You should see something like `Python 3.11.4`. You need **Python 3.10 or later**.
 
-If you get an error, or your version is older than 3.10, download and install Python from [python.org/downloads](https://www.python.org/downloads/). **On the first page of the installer, tick the box "Add python.exe to PATH"** before clicking Install — this step is easy to miss and causes problems later if skipped. Then close and reopen your Terminal and repeat the check.
+If you get an error, or your version is older than 3.10, download and install Python from [python.org/downloads](https://www.python.org/downloads/). **On the first page of the installer, tick the box "Add python.exe to PATH"** before clicking Install - this step is easy to miss and causes problems later if skipped. Then close and reopen your Terminal and repeat the check.
 
 **B2. Check pip is available**
 
@@ -193,7 +193,7 @@ python -m ensurepip --upgrade
 ```
 cd path\to\Nilearn2026
 ```
-(Replace with wherever you put it — e.g. `cd Documents\CourseMaterials\Nilearn2026`.)
+(Replace with wherever you put it - e.g. `cd Documents\CourseMaterials\Nilearn2026`.)
 
 **B4. Create a virtual environment**
 
@@ -224,7 +224,7 @@ Your Terminal prompt should now show `(venv)` at the start of the line.
 .\venv\Scripts\pip.exe install -r requirements.txt
 ```
 
-> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely — please use this exact form.
+> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely - please use this exact form.
 
 This may take a minute or two.
 
@@ -237,11 +237,11 @@ deactivate
 ```
 This deactivates the virtual environment (your prompt will lose the `(venv)` prefix). You can then simply close the Terminal window.
 
-> **Everything from here onward (Part 2) is only needed once the session itself begins** — there's no need to do this in advance.
+> **Everything from here onward (Part 2) is only needed once the session itself begins** - there's no need to do this in advance.
 
 ---
 
-### PART 2 — On the day (during the session)
+### PART 2 - On the day (during the session)
 
 **B8. Reactivate the virtual environment**
 
@@ -273,7 +273,7 @@ to close the virtual environment, and close the Terminal window.
 
 ## Section C: Linux
 
-### PART 1 — Pre-session setup
+### PART 1 - Pre-session setup
 
 **C1. Check you have Python installed**
 
@@ -299,7 +299,7 @@ python3 -m ensurepip --upgrade
 ```
 cd path/to/Nilearn2026
 ```
-(Replace with wherever you put it — e.g. `cd Documents/CourseMaterials/Nilearn2026`.)
+(Replace with wherever you put it - e.g. `cd Documents/CourseMaterials/Nilearn2026`.)
 
 **C4. Create a virtual environment**
 
@@ -321,7 +321,7 @@ Your Terminal prompt should now show `(venv)` at the start of the line.
 ./venv/bin/pip install -r requirements.txt
 ```
 
-> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed (like `pyenv` or `conda`) can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely — please use this exact form.
+> **Why not just `pip install -r requirements.txt`?** On some computers, other Python tools you may have installed (like `pyenv` or `conda`) can quietly intercept the plain `pip` command, even when a venv is active, and install packages in the wrong place. Calling `pip` by its full path inside the `venv` folder, as shown above, avoids this problem entirely - please use this exact form.
 
 This may take a minute or two.
 
@@ -334,11 +334,11 @@ deactivate
 ```
 This deactivates the virtual environment (your prompt will lose the `(venv)` prefix). You can then simply close the terminal window.
 
-> **Everything from here onward (Part 2) is only needed once the session itself begins** — there's no need to do this in advance.
+> **Everything from here onward (Part 2) is only needed once the session itself begins** - there's no need to do this in advance.
 
 ---
 
-### PART 2 — On the day (during the session)
+### PART 2 - On the day (during the session)
 
 **C8. Reactivate the virtual environment**
 
@@ -386,7 +386,7 @@ Run `python3 -m ensurepip --upgrade` (Mac/Linux) or `python -m ensurepip --upgra
 This means the notebook isn't using the right Python environment. Make sure you launched Jupyter using the full-path command (Step 9 in your section), from a Terminal where the venv was active, and check the selected kernel as described in Step 10.
 
 **A cell that downloads data seems to hang, or shows a `429` or "Too Many Requests" error**
-This shouldn't happen — the datasets needed for this course are already included in the `nilearn_data` folder in this repository. If you see this, please get in touch rather than trying to force a re-download.
+This shouldn't happen - the datasets needed for this course are already included in the `nilearn_data` folder in this repository. If you see this, please get in touch rather than trying to force a re-download.
 
 **Something else isn't working**
 Email `samuel.beaton@psych.ox.ac.uk` with a screenshot of the error and which step you were on.
