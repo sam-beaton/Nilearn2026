@@ -1,5 +1,6 @@
 # Core packages needed to run the Nilearn2026 course notebooks.
 # Versions below are pinned to what has been tested against these notebooks.
+# Requires Python 3.12 or later (tested with Python 3.13).
 # Install with:  pip install -r requirements.txt
 
 nilearn==0.14.1

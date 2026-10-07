@@ -13,3 +13,6 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Teaching answer notebooks (never share with students)
+*_answers.ipynb
