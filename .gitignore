@@ -16,3 +16,6 @@ Thumbs.db
 
 # Teaching answer notebooks (never share with students)
 *_answers.ipynb
+
+# Student handout for the VLE (not part of the repo)
+Nilearn2026_Presession_Setup.docx
